@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">        	
+		<title>25周年庆</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/25years.css"/>
+	</head>
+	<body style="overflow: hidden;">
+		<div class="mainBox">
+			<div class="lion"></div>			
+			<img src="img/year.png" class="year"/>
+			<img src="img/goods-1.png" class="goods goods1"/>
+			<img src="img/goods-2.png" class="goods goods2"/>
+			<img src="img/goods-3.png" class="goods goods3"/>
+			<img src="img/goods-4.png" class="goods goods4"/>
+			<img src="img/goods-5.png" class="goods goods5"/>
+			<img src="img/goods-6.png" class="goods goods6"/>
+			<img src="img/goods-7.png" class="goods goods7"/>
+			<img src="img/goods-8.png" class="goods goods8"/>
+			<img src="img/goods-9.png" class="goods goods9"/>
+			<img src="img/goods-10.png" class="goods goods10"/>
+			<img src="img/goods-11.png" class="goods goods11"/>
+			<img src="img/goods-12.png" class="goods goods12"/>
+			<img src="img/goods-13.png" class="goods goods13"/>
+			<img src="img/goods-14.png" class="goods goods14"/>
+			<img src="img/goods-15.png" class="goods goods15"/>
+			<img src="img/soil.png" class="soil"/>
+			<img src="img/tree0.png" class="tree tree0"/>
+			<img src="img/tree1.png" class="tree tree1"/>
+			<img src="img/tree2.png" class="tree tree2"/>
+			<img src="img/tree3.png" class="tree tree3"/>
+			<img src="img/tree4.png" class="tree tree4"/>
+			<img src="img/swing.png" class="swing"/>
+			<img src="img/sulion.png" class="sulion"/>
+			<img src="img/ball1.png" class="ball ball1"/>
+			<img src="img/ball2.png" class="ball ball2"/>
+			<img src="img/ball3.png" class="ball ball3"/>
+			<img src="img/ball4.png" class="ball ball4"/>
+			<img src="img/ball5.png" class="ball ball5"/>
+			<img src="img/ball6.png" class="ball ball6"/>
+			<img src="img/ball7.png" class="ball ball7"/>
+			<img src="img/ball8.png" class="ball ball8"/>
+			<img src="img/ball9.png" class="ball ball9"/>
+			<img src="img/ball10.png" class="ball ball10"/>
+			<img src="img/ball11.png" class="ball ball11"/>
+			<img src="img/ball12.png" class="ball ball12"/>
+			<img src="img/ball13.png" class="ball ball13"/>
+		</div>		
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js" ></script>
+	<script src="js/snow.js"></script>
+	<script type="text/javascript">
+		$('.mainBox').height($(window).height());
+//		狮子变脸		
+		$(document).ready(function(){			
+//			clearInterval(lionInterval);
+			//立即执行开始，不写这块，动画会从下个周期开始执行
+			setTimeout(function(){
+				changelion();
+			},0)
+		});	
+		function changelion(){
+			$(".lion").css("background-image","url(img/lion1.png)");
+			setTimeout(function(){
+				$(".lion").css("background-image","url(img/lion2.png)");
+			},1900);			
+		}
+	</script>	
+	</body>
+</html>
